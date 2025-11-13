@@ -38,6 +38,44 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
+      - name: Verify HTML notebook files exist
+        run: |
+          echo "Checking for required HTML notebook files..."
+          if [ -f "cnn_from_scratch.html" ]; then
+            echo "✓ cnn_from_scratch.html found"
+          else
+            echo "✗ cnn_from_scratch.html not found"
+            exit 1
+          fi
+          if [ -f "transfer_learning.html" ]; then
+            echo "✓ transfer_learning.html found"
+          else
+            echo "✗ transfer_learning.html not found"
+            exit 1
+          fi
+          if [ -f "app.html" ]; then
+            echo "✓ app.html found"
+          else
+            echo "✗ app.html not found"
+            exit 1
+          fi
+      
+      - name: Verify README.md exists
+        run: |
+          if [ -f "README.md" ]; then
+            echo "✓ README.md found and will be used as root page"
+          else
+            echo "✗ README.md not found"
+            exit 1
+          fi
+      
+      - name: List files to be deployed
+        run: |
+          echo "Files ready for deployment:"
+          echo "  - README.md (root page)"
+          echo "  - cnn_from_scratch.html"
+          echo "  - transfer_learning.html"
+          echo "  - app.html"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
