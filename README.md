@@ -1,5 +1,11 @@
 # 🏛️ AWS Landmark Classification with CNN & Transfer Learning
 #### ARBAOUI MERIEM
+### Project Notebooks
+ - 🧩 [CNN from scratch Notebook](https://meriem30.github.io/AWS-Landmark-CNN-Transfer-Learning-Udacity-Advanced-Program/)
+ - 🔁 [Transfer Learning Notebook](https://meriem30.github.io/AWS-Landmark-CNN-Transfer-Learning-Udacity-Advanced-Program/transfer_learning)
+ - 📊 [App Notebook](https://meriem30.github.io/AWS-Landmark-CNN-Transfer-Learning-Udacity-Advanced-Program/app)
+
+> Click the links above to view each notebook rendered as an HTML page.  
 
 ---
 This project tackles the challenge of **automatic location detection** through **landmark recognition** in photos. It builds an **end-to-end image classification system** using **Convolutional Neural Networks (CNNs)** and **Transfer Learning**.
@@ -47,7 +53,7 @@ AWS-Landmark-CNN-Transfer-Learning/
 ├── app.ipynb                    # Application interface for your new landmark images
 │
 ├── # Jupyter notebook HTML pages
-├── cnn_from_scratch.html   
+├── index.html                   # cnn_from_scratch.html renamed for root URLs (Github Pages)
 ├── transfer_learning.html   
 ├── app.html                
 │
