@@ -41,10 +41,10 @@ jobs:
       - name: Verify HTML notebook files exist
         run: |
           echo "Checking for required HTML notebook files..."
-          if [ -f "cnn_from_scratch.html" ]; then
-            echo "✓ cnn_from_scratch.html found"
+          if [ -f "index.html" ]; then
+            echo "✓ index.html found"
           else
-            echo "✗ cnn_from_scratch.html not found"
+            echo "✗ index.html not found"
             exit 1
           fi
           if [ -f "transfer_learning.html" ]; then
